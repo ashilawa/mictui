@@ -1,0 +1,40 @@
+html{
+    height:100%;
+    width:100%;
+}
+
+body{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+
+.h{
+    height:100%;
+}
+
+.w{
+    width:100%;
+}
+
+.toolbar{
+    height:5%;
+}
+
+.content{
+    height:96%;
+    background-color: #ebebeb;
+}
+
+.whiteContainer{
+    height: 92%;
+    width: 98%;
+    margin: 2% 2% 2% 0%;
+    background-color: white;
+    padding: 1.5%;
+    border: 1px solid #d4d3d3;
+}
+
+.mycolor{
+    color:red;
+}

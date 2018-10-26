@@ -1,0 +1,16 @@
+.h{
+    height:100%;
+}
+
+.w{
+    width:100%;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.contentContainer{
+    width:100%;
+    height:94.9%;
+}

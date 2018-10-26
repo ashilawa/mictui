@@ -1,0 +1,17 @@
+.alignCenter{
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:30px;
+}
+
+.whiteContainer{
+    height: 92%;
+    width: 98%;
+    margin: 2% 2% 2% 0%;
+    background-color: white;
+    padding: 1.5%;
+    border: 1px solid #d4d3d3;
+}

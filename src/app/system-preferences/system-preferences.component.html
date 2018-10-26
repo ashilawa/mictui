@@ -1,0 +1,29 @@
+<div class="container-fluid h w">
+  <div class="labelHeading">
+    <b>System Preferences</b>
+  </div>
+  <div class="content w">
+      <div class="navPanel">
+          <!-- [ngClass]="{'className1' : condition, 'className2' : !condition}" -->
+          <li class="menu-item"><a routerLink="/systemPreferences/general" routerLinkActive="active">General</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/accessControl" routerLinkActive="active">Access Control</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/viewPorts" routerLinkActive="active">Viewports</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/patientSchedule" routerLinkActive="active">Patient Schedule</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/imgDatabase" routerLinkActive="active">Image Database</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/networking" routerLinkActive="active">Networking</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/pps" routerLinkActive="active">PPS</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/examSplit" routerLinkActive="active">Exam Split</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/protocolSelection" routerLinkActive="active">Protocol Selection</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/patientDataEntry" routerLinkActive="active">Patient Data Entry</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/contrastMgmt" routerLinkActive="active">Contrast Management</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/ecg" routerLinkActive="active">ECG</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/inventional" routerLinkActive="active">Interventional</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/screenRoomDisplay" routerLinkActive="active">Screen Room Display</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/lighting" routerLinkActive="active">Lighting</a></li>
+          <li class="menu-item"><a routerLink="/systemPreferences/cloudConnectivity" routerLinkActive="active">Cloud Connectivity</a></li>
+        </div>
+      <div class="subContainer">
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>

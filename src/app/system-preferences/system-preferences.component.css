@@ -1,0 +1,60 @@
+.h{
+    height:100%;
+}
+
+.w{
+    width:100%;
+}
+
+.container-fluid{
+    padding:0;
+}
+
+.menu-item{
+    list-style: none;
+}
+
+.menu-item a{
+    color: #000;
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    padding: 3px;
+}
+
+.menu-item:hover,.menu-item a:active,.menu-item a:hover,.menu-item a:focus{
+    /* background: #2996b7; */
+    text-decoration: none;
+}
+
+.labelHeading{
+    height: 3%;
+    line-height: 1.6;
+    background: #cdcbcc;
+    font-size: 12px;
+    padding-left: 1%;
+}
+
+.navPanel{
+    height: 100%;
+    width: 18%;
+    float:left;
+    text-align:right;
+    padding: 2% 2% 2% 0%;
+}
+
+.subContainer{
+    height: 100%;
+    width: 82%;
+    float:left;
+}
+
+.content{
+    height:98.3%;
+    background-color: #ebebeb;
+}
+
+.active{
+    background-color: #2996b7;
+    color:#fff !important;
+}

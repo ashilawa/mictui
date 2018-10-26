@@ -1,0 +1,36 @@
+header{
+    height: 3%;
+    width: 100%;
+    background: #000;
+}
+
+#button-basic{
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	padding-left: 0;
+    color: #fff;
+    font-size: 20px;
+}
+.caret{
+    color: white !important;
+}
+
+.dropdown-header-indexMenu {
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #eee;
+    color: black;
+}
+
+.dropdown-menu {
+    padding-top: 0 !important;
+}
+
+.caret{
+    border-top: 6px dashed;
+    border-top: 6px solid;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}

@@ -1,0 +1,176 @@
+<div class="whiteContainer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <p style="font-size: 12px;font-weight: bold;">ECG</p>
+  <hr>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadding customRow">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 noPadding">
+      <label class="labelStyle">ECG Device</label>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <input type="radio" name="ecgDevice" value="internal" [(ngModel)]="ECGData.ecgDevice">
+      <label class="radioLabels">Internal</label>
+      <input type="radio" name="ecgDevice" value="external" [(ngModel)]="ECGData.ecgDevice">
+      <label class="radioLabels">External</label>
+    </div>
+  </div>
+
+  <hr style='clear:both'>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadding">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadding customRow">
+      <label class="labelStyle">Internal Device</label>
+    </div>  
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 customRow">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 noPadding">
+        <label class="labelStyle">Active Lead</label>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <input type="radio" name="activeLead" value="lead I" [(ngModel)]="ECGData.internalDevice.activeLead">
+        <label class="radioLabels">Lead I</label>
+        <input type="radio" name="activeLead" value="lead II" [(ngModel)]="ECGData.internalDevice.activeLead">
+        <label class="radioLabels">Lead II</label>
+        <input type="radio" name="activeLead" value="lead III" [(ngModel)]="ECGData.internalDevice.activeLead">
+        <label class="radioLabels">Lead III</label>
+        <input type="radio" name="activeLead" value="auto" [(ngModel)]="ECGData.internalDevice.activeLead">
+        <label class="radioLabels">Auto</label>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 customRow">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 noPadding">
+        <label class="labelStyle">Waveform Filter</label>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <select class="onOffDropdown" [(ngModel)]="ECGData.internalDevice.waveFormFilter">
+          <option value="on">On</option>
+          <option value="off">Off</option>
+        </select>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 customRow">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 noPadding">
+        <label class="labelStyle">Gain</label>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <input type="radio" name="gain" value="1x" [(ngModel)]="ECGData.internalDevice.gain">
+        <label class="radioLabels">1X</label>
+        <input type="radio" name="gain" value="2x" [(ngModel)]="ECGData.internalDevice.gain">
+        <label class="radioLabels">2X</label>
+        <input type="radio" name="gain" value="4x" [(ngModel)]="ECGData.internalDevice.gain">
+        <label class="radioLabels">4X</label>
+        <input type="radio" name="gain" value="8x" [(ngModel)]="ECGData.internalDevice.gain">
+        <label class="radioLabels">8X</label>
+        <input type="radio" name="gain" value="auto" [(ngModel)]="ECGData.internalDevice.gain">
+        <label class="radioLabels">Auto</label>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 customRow">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 noPadding">
+        <label class="labelStyle">Impedance Sensitivity</label>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <select class="onOffDropdown" style="width:25%;" [(ngModel)]="ECGData.internalDevice.impedenceSensitivity">
+          <option value="High(50 kOhm)">High (50 k Ohm)</option>
+          <option value="Medium(500 kOhm)">Medium (25 k Ohm)</option>
+          <option value="Low(10 kOhm)">Low (10 k Ohm)</option>
+        </select>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 customRow">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 noPadding">
+        <label class="labelStyle">Pacer Detect</label>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <select class="onOffDropdown" [(ngModel)]="ECGData.internalDevice.pacerDetector">
+          <option value="on">On</option>
+          <option value="off">Off</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <hr style='clear:both'>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadding">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadding customRow">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 noPadding">
+        <label class="labelStyle">Statistics Window length</label>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <input class="tabelCell" type="text" [(ngModel)]="ECGData.measurment.statisticsWindowLength">
+        <span class="s">s</span>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadding customRow">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 noPadding">
+        <label class="labelStyle">Irregular beat Window Length</label>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <input class="tabelCell" type="text" [(ngModel)]="ECGData.measurment.irregularBeatWindowLength">
+        <span class="s">s</span>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadding customRow">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 noPadding">
+        <label class="labelStyle">Breathhold Record Length</label>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <input class="tabelCell" type="text" [(ngModel)]="ECGData.measurment.breathholdRecordLength">
+        <span class="s">s</span>
+      </div>
+    </div>
+  </div>
+
+  <hr style='clear:both'>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadding">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadding">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 noPadding">
+        <label class="labelStyle">Cardiac Multiphase Fixed Interval Recon</label>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <select class="onOffDropdown" style="margin-left:5px;" [(ngModel)]="ECGData.cardiacMultiphaseInterval">
+          <option value="off">Off</option>
+          <option value="on">On</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr style='clear:both'>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadding">
+    <div class="col-xs-offset-8 col-sm-offset-8 col-md-offset-8 col-lg-offset-8 
+    col-xs-4 col-sm-4 col-md-4 col-lg-4 noPadding">
+      <input class="blackBtn" type="button" value="Restore Presets" (click)="restoreValue()" 
+      style="cursor: not-allowed;" disabled>
+      <input class="greyBtn" type="button" value="Cancel" (click)="Cancel()">
+      <input class="blackBtn" type="button" value="Save" (click)="Save(ECGData)">
+      <input class="blackBtn" type="button" value="Save and Close" (click)="SaveAndClose()" 
+      style="cursor: not-allowed;" disabled>
+    </div>
+</div>

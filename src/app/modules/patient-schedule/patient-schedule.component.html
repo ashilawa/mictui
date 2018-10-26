@@ -1,0 +1,40 @@
+<div class="whiteContainer col-xs-12 col-sm-12 col-md-12">
+    <p style="font-size: 12px;font-weight: bold;">Patient Schedule</p>
+    <hr>
+    <div class="col-xs-12 col-sm-12 col-md-12 noPadding">
+        <div class="col-xs-12 col-sm-12 col-md-12 noPadding">
+            <div class="col-xs-4 col-sm-4 col-md-4 noPadding">
+              <label class="labelStyle" style="margin-top: 7px;">Calling AE Title</label>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <input class="inputText" type="text" [(ngModel)]="PatientScheduleData.callingAeTitle">
+            </div>
+        </div>
+        <div class="break"></div>
+        <div class="col-xs-12 col-sm-12 col-md-12 noPadding">
+            <div class="col-xs-4 col-sm-4 col-md-4 noPadding">
+                <label class="labelStyle">Use Modality Worklist Study UID</label>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <input type="radio" name="uid" value="true" [(ngModel)]="PatientScheduleData.useModalityWorkListStudyUID">
+                <label class="radioLabels">On</label>
+                <input type="radio" name="uid" value="false" [(ngModel)]="PatientScheduleData.useModalityWorkListStudyUID">
+                <label class="radioLabels">Off</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr style='clear:both'>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadding">
+    <div class="col-xs-offset-8 col-sm-offset-8 col-md-offset-8 col-lg-offset-8 
+    col-xs-4 col-sm-4 col-md-4 col-lg-4 noPadding">
+        <input class="blackBtn" type="button" value="Restore Presets" (click)="restoreValue()" 
+        style="cursor: not-allowed;" disabled>
+        <input class="greyBtn" type="button" value="Cancel" (click)="Cancel()">
+        <input class="blackBtn" type="button" value="Save" (click)="Save(PatientScheduleData)">
+        <input class="blackBtn" type="button" value="Save and Close" (click)="SaveAndClose()" 
+        style="cursor: not-allowed;" disabled>
+    </div>
+</div>

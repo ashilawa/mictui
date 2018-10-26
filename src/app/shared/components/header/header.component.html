@@ -1,0 +1,18 @@
+<header>
+    <nav>
+        <div fxFlex fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+            <div fxFlex="40">
+                <div class="btn-group" dropdown container="body">
+                    <span id="button-basic" dropdownToggle class="dropdown-toggle caret" 
+                    aria-controls="dropdown-basic"></span>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic" style="font-size: 14px !important;">
+                        <li role="presentation">
+                        <a class="dropdown-item" routerLink="/systemPreferences">System Preferences</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+            <div fxFlex class="text-right"></div>
+        </div>
+    </nav>
+</header>
